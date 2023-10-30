@@ -23,7 +23,7 @@ click = 0
 
 @app.on_message(filters.command("start"))
 async def start(app, msg):
-    if msg.from_user.id == 5459580600:
+    if msg.from_user.id == 6376489778:
         await msg.reply_text(text=f'''Hi ,  {msg.from_user.first_name}''', reply_markup=ReplyKeyboardMarkup(
           [
           [f"ɪɴғᴏ"],
@@ -38,7 +38,7 @@ async def start(app, msg):
 
 @app.on_message(filters.text)
 async def main(app, msg):
-        if msg.from_user.id == 5459580600:
+        if msg.from_user.id == 6376489778:
         	pass
         else:
         	await app.send_message(msg.chat.id, f'''Dev''', reply_to_message_id=msg.id, reply_markup=InlineKeyboardMarkup(
